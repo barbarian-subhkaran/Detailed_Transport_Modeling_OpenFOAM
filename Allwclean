@@ -1,0 +1,39 @@
+#!/bin/sh
+
+cd src/thermophysicalModels/specie/
+wclean
+
+cd ../basic/
+wclean
+
+cd ../reactionThermo/
+wclean
+
+cd ../chemistryModel/
+wclean
+
+cd ../../TurbulenceModels/turbulenceModels/
+wclean
+
+cd ../compressible/
+wclean
+
+cd ../../combustionModels/
+wclean
+
+cd ../../applications/utilities/thermophysical/standardChemkinToFoam/
+wclean
+
+cd ../../../solvers/combustion/standardChemFoam/
+wclean
+
+cd ../standardReactingFoam/
+wclean
+
+cd rhoStandardReactingFoam/
+wclean
+
+
+cd ../../../../../
+rm -r platforms
+

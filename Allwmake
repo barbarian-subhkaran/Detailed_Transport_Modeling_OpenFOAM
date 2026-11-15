@@ -1,0 +1,41 @@
+#!/bin/sh
+
+cd src/thermophysicalModels/thermophysicalProperties/
+wmakeLnInclude -u .
+
+cd ../specie/
+wmake
+
+cd ../thermophysicalProperties/
+wmake
+
+cd ../basic/
+wmake
+
+cd ../reactionThermo/
+wmake
+
+cd ../chemistryModel/
+wmake
+
+cd ../../TurbulenceModels/turbulenceModels/
+wmake
+
+cd ../compressible/
+wmake
+
+cd ../../combustionModels/
+wmake
+
+cd ../../applications/utilities/thermophysical/standardChemkinToFoam/
+wmake
+
+cd ../../../solvers/combustion/standardChemFoam/
+wmake
+
+cd ../standardReactingFoam/
+wmake
+
+cd rhoStandardReactingFoam/
+wmake
+
